@@ -32,6 +32,7 @@
             android:layout_below="@+id/adCard"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
+            <!--
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,5 +105,144 @@
         </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-    </ScrollView>
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+    <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentCard1"
+                android:layout_weight="4"
+                android:padding="16dp"
+                android:backgroundTint="#F44336"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" >
+        <TextView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="@string/root_access"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" android:id="@+id/rootAccess"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="@string/default_status"
+            android:layout_height="wrap_content" android:id="@+id/rootAccessStatus"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/contentCard2"
+         android:layout_weight="4"
+         android:padding="16dp"
+         android:backgroundTint="#9C27B0"
+         app:cardCornerRadius="5dp"
+         android:layout_margin="5dp">
+         <LinearLayout android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_weight="0.9" >
+              <TextView
+                  android:padding="8dp"
+                  android:layout_width="match_parent"
+                  android:textColor="#FFFFFF"
+                  android:text="@string/super_user"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:textSize="18dp"
+                  android:textStyle="bold"
+                  android:layout_height="wrap_content" android:id="@+id/superUser"/>
+              <TextView
+                  android:padding="8dp"
+                  android:layout_width="match_parent"
+                  android:textColor="#FFFFFF"
+                  android:text="@string/default_status"
+                  android:layout_height="wrap_content" android:id="@+id/superUserStatus"/>
+         </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentCard3"
+        android:layout_weight="4"
+        android:padding="16dp"
+        android:backgroundTint="#009688"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" >
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:text="@string/busy_box"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" android:id="@+id/busyBox"/>
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:text="@string/default_status"
+                android:layout_height="wrap_content" android:id="@+id/busyBoxStatus"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentCard4"
+        android:layout_weight="4"
+        android:padding="16dp"
+        android:backgroundTint="#E91E63"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" >
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:text="@string/path"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" android:id="@+id/path"/>
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:text="@string/default_status"
+                android:layout_height="wrap_content" android:id="@+id/pathValue"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+     </LinearLayout>
+        </ScrollView>
 </RelativeLayout>

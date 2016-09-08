@@ -240,28 +240,28 @@ private FirebaseAnalytics mFirebaseAnalytics;
 
         if(RootTools.isRootAvailable()){
             superUserStatus.setText("Super Access is Available");
-            superUserStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
+            //superUserStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
         }else{
             superUserStatus.setText("Super Access is Not Available");
-            superUserStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.warning)));
+            //superUserStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.warning)));
         }
 
         if(RootTools.isAccessGiven()){
             rootAccessStatus.setText("Root is Available");
-            rootAccessStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
+            //rootAccessStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
             pathValue.setText((CharSequence) RootTools.getPath());
         }else{
             rootAccessStatus.setText("Root is Not Available");
-            rootAccessStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.warning)));
+            //rootAccessStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.warning)));
             pathValue.setText("Not Available");
         }
 
         if(RootTools.isBusyboxAvailable()){
             busyBoxStatus.setText("Busy Box is Available");
-            busyBoxStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
+            //busyBoxStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
         }else{
             busyBoxStatus.setText("Busy Box is Not Available");
-            busyBoxStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.warning)));
+            //busyBoxStatus.setTextColor(ColorStateList.valueOf(getResources().getColor(R.color.warning)));
         }
     }
 
