@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Root Checker +</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2504330195355115/5887106182</string>
+    <string name="interstitial_unit_id">ca-app-pub-2504330195355115/5887106182</string>
+    <string name="app_intro">Root Checker +</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="path">PATH</string>
+    <string name="busy_box">BUSY BOX</string>
+    <string name="super_user">SUPER USER</string>
+    <string name="root_access">ROOT ACCESS</string>
+    <string name="default_status">Click on Fab to Check</string>
+    <string name="root_wiki_content">Rooting is the Android equivalent of jailbreaking, a means of unlocking the operating system so you can install unapproved apps, deleted unwanted bloatware, update the OS, replace the firmware, overclock (or underclock) the processor, customize anything and so on. In particular it is just getting Super User permissions in Linux</string>
+</resources>
