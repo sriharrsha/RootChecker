@@ -32,80 +32,6 @@
             android:layout_below="@+id/adCard"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
-            <!--
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/contentCard"
-        android:layout_weight="4"
-        android:padding="16dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        <TextView
-            android:padding="8dp"
-            android:layout_width="match_parent"
-            android:textColor="@color/colorPrimaryText"
-            android:text="@string/root_access"
-            android:layout_height="wrap_content" android:id="@+id/rootAccess"/>
-        <TextView
-            android:padding="8dp"
-            android:layout_width="match_parent"
-            android:textColor="@color/colorPrimaryText"
-            android:text="@string/super_user"
-            android:layout_height="wrap_content" android:id="@+id/superUser"/>
-        <TextView
-            android:padding="8dp"
-            android:layout_width="match_parent"
-            android:textColor="@color/colorPrimaryText"
-            android:text="@string/busy_box"
-            android:layout_height="wrap_content" android:id="@+id/busyBox"/>
-        <TextView
-            android:padding="8dp"
-            android:text="@string/path"
-            android:textColor="@color/colorPrimaryText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/path"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="2">
-            <TextView
-                android:padding="8dp"
-                android:layout_width="match_parent"
-                android:textColor="@color/colorSecondaryText"
-                android:text="@string/default_status"
-                android:layout_height="wrap_content" android:id="@+id/rootAccessStatus"/>
-            <TextView
-                android:padding="8dp"
-                android:layout_width="match_parent"
-                android:textColor="@color/colorSecondaryText"
-                android:text="@string/default_status"
-                android:layout_height="wrap_content" android:id="@+id/superUserStatus"/>
-            <TextView
-                android:padding="8dp"
-                android:layout_width="match_parent"
-                android:textColor="@color/colorSecondaryText"
-                android:text="@string/default_status"
-                android:layout_height="wrap_content" android:id="@+id/busyBoxStatus"/>
-            <TextView
-                android:padding="8dp"
-                android:text="@string/default_status"
-                android:textColor="@color/colorSecondaryText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/pathValue"/>
-        </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-            -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,9 +44,12 @@
                 android:id="@+id/contentCard1"
                 android:layout_weight="4"
                 android:padding="16dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="#303F9F"
                 app:cardCornerRadius="5dp"
                 android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal">
         <LinearLayout android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,7 +71,17 @@
             android:text="@string/default_status"
             android:layout_height="wrap_content" android:id="@+id/rootAccessStatus"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="vertical" >
+            <ImageView
+                android:paddingTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/key"/>
 
+        </LinearLayout>
+        </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
          android:layout_width="match_parent"
@@ -150,9 +89,12 @@
          android:id="@+id/contentCard2"
          android:layout_weight="4"
          android:padding="16dp"
-         android:backgroundTint="#9C27B0"
+         android:backgroundTint="#455A64"
          app:cardCornerRadius="5dp"
          android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal">
          <LinearLayout android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -174,6 +116,17 @@
                   android:text="@string/default_status"
                   android:layout_height="wrap_content" android:id="@+id/superUserStatus"/>
          </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="vertical" >
+                    <ImageView
+                        android:paddingTop="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/superheroe"/>
+
+                </LinearLayout>
+            </LinearLayout>
 
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -182,9 +135,12 @@
         android:id="@+id/contentCard3"
         android:layout_weight="4"
         android:padding="16dp"
-        android:backgroundTint="#009688"
+        android:backgroundTint="#0091EA"
         app:cardCornerRadius="5dp"
         android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal">
         <LinearLayout android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -206,6 +162,17 @@
                 android:text="@string/default_status"
                 android:layout_height="wrap_content" android:id="@+id/busyBoxStatus"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="vertical" >
+            <ImageView
+                android:paddingTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/busybox"/>
+
+        </LinearLayout>
+    </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -213,9 +180,12 @@
         android:id="@+id/contentCard4"
         android:layout_weight="4"
         android:padding="16dp"
-        android:backgroundTint="#E91E63"
+        android:backgroundTint="#FFC107"
         app:cardCornerRadius="5dp"
         android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal">
         <LinearLayout android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -237,6 +207,17 @@
                 android:text="@string/default_status"
                 android:layout_height="wrap_content" android:id="@+id/pathValue"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="vertical" >
+            <ImageView
+                android:paddingTop="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/folder"/>
+
+        </LinearLayout>
+    </LinearLayout>
     </android.support.v7.widget.CardView>
 
 

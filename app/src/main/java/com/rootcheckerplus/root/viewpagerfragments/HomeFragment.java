@@ -12,7 +12,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.rootcheckerplus.root.BuildConfig;
-import com.rootcheckerplus.root.MainActivity;
 import com.rootcheckerplus.root.R;
 
 /**
@@ -38,8 +37,8 @@ public class HomeFragment extends Fragment {
             AdRequest adRequest;
             if (BuildConfig.DEBUG) {
                 adRequest = new AdRequest.Builder()
-                        .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                        .addTestDevice(MainActivity.getDeviceId())
+                       // .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                       // .addTestDevice(MainActivity.getDeviceId())
                         .build();
             }else {
                 adRequest= new AdRequest.Builder().build();
