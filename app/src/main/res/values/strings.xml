@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Root Checker +</string>
-    <string name="banner_ad_unit_id">ca-app-pub-2504330195355115/5887106182</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2504330195355115/4410372980</string>
     <string name="interstitial_unit_id">ca-app-pub-2504330195355115/5887106182</string>
+    <string name="appzoom_appkey">ae77b0da4e947ec24430954f941e9c46</string>
     <string name="app_intro">Root Checker +</string>
 
     <!-- TODO: Remove or change this placeholder text -->

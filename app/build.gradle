@@ -8,8 +8,8 @@ android {
         applicationId "com.rootcheckerplus.root"
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 2
-        versionName "1.0 Release"
+        versionCode 6
+        versionName "5.5 Release"
         multiDexEnabled false
     }
     buildTypes {
@@ -35,6 +35,9 @@ dependencies {
     compile 'com.google.firebase:firebase-ads:9.4.0'
     compile 'com.google.android.gms:play-services-appindexing:9.4.0'
     compile 'com.android.support:support-v4:24.2.0'
+
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'AppsZoomSDK:library:2.0.3'
 }
 
 

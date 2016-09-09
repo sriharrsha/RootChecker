@@ -2,7 +2,6 @@ package com.rootcheckerplus.root;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -20,7 +19,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.appszoom.appszoomsdk.Appszoom;
 import com.github.amlcurran.showcaseview.ShowcaseView;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.gms.ads.AdListener;
@@ -55,7 +56,7 @@ private FirebaseAnalytics mFirebaseAnalytics;
     private String mTitle;
     private String mDescription;
     private Intent mShareIntent;
-
+    private int backCount=0;
 
     public static String getDeviceId()
     {
@@ -77,6 +78,27 @@ private FirebaseAnalytics mFirebaseAnalytics;
     }
 
     @Override
+    public void onBackPressed() {
+        backCount++;
+        if(backCount==0){
+            Toast.makeText(getApplicationContext(),"Press back again to exit", Toast.LENGTH_SHORT).show();
+            if(Appszoom.isAdAvailable()){
+                Appszoom.showAd(this);
+            }
+        }else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        backCount=0;
+    }
+
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -91,8 +113,10 @@ private FirebaseAnalytics mFirebaseAnalytics;
         mShareIntent = new Intent();
         mShareIntent.setAction(Intent.ACTION_SEND);
         mShareIntent.setType("text/plain");
-        mShareIntent.putExtra(Intent.EXTRA_TEXT, "Hey I found this app which lets you check your phone is rooted or not. https://play.google.com/store/apps/details?id=com.rootcheckerplus.root");
+        mShareIntent.putExtra(Intent.EXTRA_TEXT, "Hey Check whether your Phone is Rooted or Not? https://play.google.com/store/apps/details?id=com.rootcheckerplus.root");
 
+
+        Appszoom.start(this);
 
 
 
