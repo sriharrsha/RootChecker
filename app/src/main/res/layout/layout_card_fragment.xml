@@ -67,6 +67,7 @@
         <TextView
             android:padding="8dp"
             android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
             android:textColor="#FFFFFF"
             android:text="@string/default_status"
             android:layout_height="wrap_content" android:id="@+id/rootAccessStatus"/>
@@ -75,9 +76,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:orientation="vertical" >
             <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:paddingTop="10dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:src="@drawable/key"/>
 
         </LinearLayout>
@@ -112,6 +116,7 @@
               <TextView
                   android:padding="8dp"
                   android:layout_width="match_parent"
+                  android:layout_marginBottom="5dp"
                   android:textColor="#FFFFFF"
                   android:text="@string/default_status"
                   android:layout_height="wrap_content" android:id="@+id/superUserStatus"/>
@@ -120,9 +125,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:orientation="vertical" >
                     <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
                         android:paddingTop="10dp"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
                         android:src="@drawable/superheroe"/>
 
                 </LinearLayout>
@@ -159,6 +167,7 @@
                 android:padding="8dp"
                 android:layout_width="match_parent"
                 android:textColor="#FFFFFF"
+                android:layout_marginBottom="5dp"
                 android:text="@string/default_status"
                 android:layout_height="wrap_content" android:id="@+id/busyBoxStatus"/>
         </LinearLayout>
@@ -166,9 +175,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:orientation="vertical" >
             <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:paddingTop="10dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:src="@drawable/busybox"/>
 
         </LinearLayout>
@@ -204,6 +216,7 @@
                 android:padding="8dp"
                 android:layout_width="match_parent"
                 android:textColor="#FFFFFF"
+                android:layout_marginBottom="5dp"
                 android:text="@string/default_status"
                 android:layout_height="wrap_content" android:id="@+id/pathValue"/>
         </LinearLayout>
@@ -211,7 +224,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:orientation="vertical" >
             <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:paddingTop="10dp"
+                android:paddingRight="10dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:src="@drawable/folder"/>
@@ -220,10 +236,18 @@
     </LinearLayout>
     </android.support.v7.widget.CardView>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" android:orientation="vertical" >
+
+
+                </LinearLayout>
 
 
 
 
-     </LinearLayout>
+
+
+            </LinearLayout>
         </ScrollView>
 </RelativeLayout>

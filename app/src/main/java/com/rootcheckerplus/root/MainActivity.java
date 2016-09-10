@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.appszoom.appszoomsdk.Appszoom;
+
 import com.github.amlcurran.showcaseview.ShowcaseView;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.gms.ads.AdListener;
@@ -78,19 +78,6 @@ private FirebaseAnalytics mFirebaseAnalytics;
     }
 
     @Override
-    public void onBackPressed() {
-        backCount++;
-        if(backCount==0){
-            Toast.makeText(getApplicationContext(),"Press back again to exit", Toast.LENGTH_SHORT).show();
-            if(Appszoom.isAdAvailable()){
-                Appszoom.showAd(this);
-            }
-        }else {
-            super.onBackPressed();
-        }
-    }
-
-    @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         backCount=0;
@@ -115,8 +102,6 @@ private FirebaseAnalytics mFirebaseAnalytics;
         mShareIntent.setType("text/plain");
         mShareIntent.putExtra(Intent.EXTRA_TEXT, "Hey Check whether your Phone is Rooted or Not? https://play.google.com/store/apps/details?id=com.rootcheckerplus.root");
 
-
-        Appszoom.start(this);
 
 
 
